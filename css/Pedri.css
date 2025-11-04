@@ -1,0 +1,150 @@
+/* === GENERAL === */
+body {
+  background: linear-gradient(135deg, #0b0b45, #931e28);
+  color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: linear-gradient(90deg, #0b0b45, #931e28);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #f1c40f !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f1c40f !important;
+  transform: scale(1.05);
+}
+
+/* === MAIN === */
+main {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* === CARDS === */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1e1e2f, #2b2b48);
+  color: #fff;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(241, 196, 15, 0.4);
+}
+
+/* Imagen de las cards */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.08);
+}
+
+/* Títulos de las cards */
+.card-title {
+  color: #f1c40f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Texto */
+.card-text {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+/* Botones */
+.btn-primary {
+  background: linear-gradient(90deg, #f1c40f, #ffffff);
+  color: #0b0b45;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ffffff, #f1c40f);
+  color: #931e28;
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(241, 196, 15, 0.6);
+}
+
+/* === CAROUSEL === */
+.carousel {
+  margin-top: 60px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.carousel img {
+  height: 550px;
+  object-fit: cover;
+}
+
+/* Indicadores */
+.carousel-indicators [data-bs-target] {
+  background-color: #f1c40f;
+}
+
+/* Flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-size: 70%;
+}
+
+/* === SECCIÓN FINAL === */
+.container-fluid.mt-3 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin-top: 60px;
+  box-shadow: 0 0 15px rgba(241, 196, 15, 0.3);
+}
+
+.container-fluid h3 {
+  color: #f1c40f;
+  font-weight: 700;
+}
+
+.container-fluid p {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* === ANIMACIONES === */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card, .carousel, .container-fluid {
+  animation: fadeInUp 0.9s ease;
+}
